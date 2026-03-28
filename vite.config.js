@@ -7,6 +7,6 @@ export default defineConfig({
   preview: {
     host: true,
     port: process.env.PORT || 5174,
-    allowedHosts: ['rkode-website.onrender.com']
+    allowedHosts: ['rkode-admin.onrender.com']
   }
 })
