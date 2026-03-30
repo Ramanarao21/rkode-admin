@@ -5,3 +5,36 @@ body {
   color: #1a1a2e;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Custom scrollbar for submission table */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #6c47ff20 transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #6c47ff20;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #6c47ff40;
+}
+
+/* Make header sticky when scrolling */
+.custom-scrollbar thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #f9fafb;
+}
